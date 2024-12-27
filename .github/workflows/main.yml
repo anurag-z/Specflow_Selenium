@@ -42,4 +42,4 @@ jobs:
            # Artifact name
           name: SpecflowReport
         # A file, directory or wildcard pattern that describes what to upload
-          path: "${{ github.workspace }}/Specflow_Selenium_Parallel/bin/debug/net6.0/Extent_Reports"
+          path: "${{ github.workspace }}/Specflow_Selenium_Parallel/bin/Debug/net6.0/Extent_Reports"
