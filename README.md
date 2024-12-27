@@ -19,6 +19,7 @@ This Framework will create extent report using Specflow and Selenium C# and to m
 ## 3. Integration of GitAction workflow and Parallel Execution in Cloud 
 
 To Execute our testcase we have created a yml file and we have used pre-defined git action to execute our scripts in headfull mode.
+Generate Extent Reports and log will attached as Artifact to Build. As shown below:
 
 ![Gitaction](https://github.com/user-attachments/assets/e950586f-0304-43e4-8ab3-c36af155817e)
 
