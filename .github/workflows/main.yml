@@ -32,7 +32,7 @@ jobs:
         run: |
           chmod +x ./Specflow_Selenium_Parallel/bin/Debug/net6.0/selenium-manager/linux/selenium-manager
       - name: Run headless Specflow test
-        uses: coactions/setup-xvfb@v1
+       # uses: coactions/setup-xvfb@v1
         with:
           working-directory: ./Specflow_Selenium_Parallel
           run: dotnet test --no-build --verbosity normal
