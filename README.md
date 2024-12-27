@@ -2,8 +2,26 @@
 
 ## Overview
 
-This repository contains a **SpecFlow** Selenium framework that uses **Dependency Injection** and **Page Object Model (POM)** pattern for testing web applications and also support **Parallel Execution** . The framework is designed to be used with the following technologies:
+This repository contains a **SpecFlow** Selenium framework that uses **Dependency Injection** and **Page Object Model (POM)** pattern for testing web applications and also support **Parallel Execution** . 
+# SpecFlow Parallel Test Execution with Selenium
 
+This repository demonstrates how to execute SpecFlow scenarios in parallel using NUnit 3.x. 
+
+## 1. SpecFlow Parallel Test Execution
+
+SpecFlow Parallel Test Execution with SpecFlow and NUnit 3.x is mainly aimed at demonstrating how we can run SpecFlow scenarios in parallel using the NUnit 3.x Parallelizable Attribute `[Parallelizable]`.
+
+With SpecFlow 2.0, parallel execution is supported using xUnit and NUnit frameworks out-of-the-box.
+
+## 2. Extent Report integration with Specflow and Selenium C#
+
+This Framework will create extent report in BDD style using Specflow and Selenium C# and to make it Thread safe we have ThreadLocal for managing Parallel execution.
+
+## 3. Integration of GitAction workflow and Parallel Execution in Cloud 
+
+To Execute our testcase we have created a yml file and we have used pre-defined git action to execute our scripts in headfull mode.
+
+# The framework is designed to be used with the following technologies:
 - **SpecFlow** (BDD for C#)
 - **Selenium WebDriver** (for browser automation)
 - **NUnit 4.x** (for test execution)
