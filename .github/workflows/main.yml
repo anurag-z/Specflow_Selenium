@@ -34,7 +34,7 @@ jobs:
        # Step 9: List the directory to verify Extent_Reports location
       - name: List project directory contents
         run: |
-          ls -R ./Specflow_Selenium_Parallel  # Recursively list files to verify the report path
+          ls -R ./Specflow_Selenium_Parallel/Extent_Reports  # Recursively list files to verify the report path
 
       # Step 10: Search for Extent_Reports folder
       - name: Search for Extent_Reports folder
