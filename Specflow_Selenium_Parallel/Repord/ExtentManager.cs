@@ -30,7 +30,7 @@ namespace PlaySel.Repord
        var reportPath = Path.Combine(Directory.GetCurrentDirectory().Replace("bin\\Debug\\net6.0", "Extent_Reports"),
                                     $"TestReport_{Guid.NewGuid()}.html");
 
-
+       Console.Write(reportPath);
             var extentReports = new ExtentReports();
             var sparkReporter = new ExtentSparkReporter(reportPath);
             extentReports.AttachReporter(sparkReporter);

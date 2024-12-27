@@ -54,6 +54,7 @@ namespace PlaySel.Hooks
                 Screenshot screenshot = screenshotDriver.GetScreenshot();
                 string filePath = Directory.GetCurrentDirectory().Replace("bin\\Debug\\net6.0", "Extent_Reports\\");
                 string time = Guid.NewGuid().ToString();
+                Console.Write(filePath+time);
                 screenshot.SaveAsFile(filePath+ _scenarioContext.ScenarioInfo.Title+ time + ".Png");
                 _extentManager.Attachscreenshot(filePath + _scenarioContext.ScenarioInfo.Title + time + ".Png", "Screenshot");
             }
