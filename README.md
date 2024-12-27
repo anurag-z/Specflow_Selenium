@@ -6,7 +6,7 @@ This repository contains a **SpecFlow** Selenium framework that uses **Dependenc
 
 ## 1. SpecFlow Parallel Test Execution
 
-SpecFlow Parallel Test Execution with SpecFlow and NUnit 3.x is mainly aimed at demonstrating how we can run SpecFlow scenarios in parallel using the NUnit 3.x Parallelizable Attribute `[Parallelizable]`.
+SpecFlow Parallel Test Execution with SpecFlow and NUnit 4.x is mainly aimed at demonstrating how we can run SpecFlow scenarios in parallel using the NUnit 4.x Parallelizable Attribute `[Parallelizable]`.
 
 With SpecFlow 2.0, parallel execution is supported using xUnit and NUnit frameworks out-of-the-box.
 
