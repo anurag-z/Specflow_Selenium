@@ -26,6 +26,7 @@ jobs:
         uses: coactions/setup-xvfb@v1
         with:
           working-directory: ./Specflow_Selenium_Parallel
+      - name: Run SpecFlow Tests
       - run: |
           dotnet test --no-build --verbosity normal
           continue-on-error: true
