@@ -12,11 +12,18 @@ With SpecFlow 2.0, parallel execution is supported using xUnit and NUnit framewo
 
 ## 2. Extent Report integration with Specflow and Selenium C#
 
-This Framework will create extent report in BDD style using Specflow and Selenium C# and to make it Thread safe we have ThreadLocal for managing Parallel execution.
+This Framework will create extent report using Specflow and Selenium C# and to make it Thread safe we have ThreadLocal for managing Parallel execution.
 
 ## 3. Integration of GitAction workflow and Parallel Execution in Cloud 
 
 To Execute our testcase we have created a yml file and we have used pre-defined git action to execute our scripts in headfull mode.
+
+![Extentreport](https://github.com/user-attachments/assets/ce852d69-70e2-4dd9-bff5-4913243aecc7)
+
+## 4. Generate Logs using Log4net
+
+This Framework support Generation of logs for Sequential as well Parallel Execution in One log file(Used Shared File strategy)
+
 
 # The framework is designed to be used with the following technologies:
 - **SpecFlow** (BDD for C#)
