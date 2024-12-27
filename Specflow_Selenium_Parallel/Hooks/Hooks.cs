@@ -55,18 +55,14 @@ namespace PlaySel.Hooks
 
                 string reportDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Extent_Reports");
 
-                // Ensure the directory exists.
-                if (!Directory.Exists(reportDirectory))
-                {
-                    Directory.CreateDirectory(reportDirectory);
-                }
+        
                 string time = Guid.NewGuid().ToString();
 
                 // string filePath = Directory.GetCurrentDirectory().Replace("bin\\Debug\\net6.0", "Extent_Reports\\");
                
                 Console.Write(reportDirectory + time);
-                screenshot.SaveAsFile(reportDirectory + Path.DirectorySeparatorChar + _scenarioContext.ScenarioInfo.Title+ time + ".Png");
-                _extentManager.Attachscreenshot(reportDirectory + Path.DirectorySeparatorChar + _scenarioContext.ScenarioInfo.Title + time + ".Png", "Screenshot");
+                screenshot.SaveAsFile(Directory.GetCurrentDirectory() +"//Extent_Reports//"+ _scenarioContext.ScenarioInfo.Title+ time + ".Png");
+                _extentManager.Attachscreenshot(Directory.GetCurrentDirectory() + "//Extent_Reports//" + _scenarioContext.ScenarioInfo.Title + time + ".Png", "Screenshot");
             }
             _extentManager.Flush();
         }

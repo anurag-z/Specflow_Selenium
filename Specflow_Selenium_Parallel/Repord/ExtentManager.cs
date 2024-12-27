@@ -30,16 +30,9 @@ namespace PlaySel.Repord
        //var reportPath = Path.Combine(Directory.GetCurrentDirectory().Replace("bin\\Debug\\net6.0", "Extent_Reports"),
        //                             $"TestReport_{Guid.NewGuid()}.html");
 
-       string reportDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Extent_Reports");
-
-       // Ensure the directory exists.
-       if (!Directory.Exists(reportDirectory))
-       {
-           Directory.CreateDirectory(reportDirectory);
-       }
-
+      
        // Generate a unique report file path.
-       var reportPath =reportDirectory+ Path.DirectorySeparatorChar + $"TestReport_{Guid.NewGuid()}.html";
+       var reportPath = Directory.GetCurrentDirectory() + "//Extent_Reports//" + $"TestReport_{Guid.NewGuid()}.html";
 
 
          Console.Write(reportPath);
