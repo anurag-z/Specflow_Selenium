@@ -67,19 +67,6 @@ The framework supports automation for **Parallel Execution** and is easily exten
    - Go to `Tools > Extensions and Updates > Online`.
    - Search for **SpecFlow** and install the extension. Restart Visual Studio after installation.
 
----
-
-## Creating a New SpecFlow Feature
-
-1. **Add a SpecFlow Feature File**:
-   - Right-click on your project name in **Solution Explorer**.
-   - Select **Add > New Item**.
-   - Choose **Visual C# Items > SpecFlow Feature File**.
-   - Name your feature file and begin writing Gherkin syntax for your test scenarios.
-
-2. **Write Your First Test**: Follow the steps from this [blog](http://ralucasuditu-softwaretesting.blogspot.co.uk/2015/06/write-your-first-test-with-specflow-and.html?m=1) to get started with SpecFlow and write your first test.
-
----
 
 ## Setting Up Enhanced Reporting
 
