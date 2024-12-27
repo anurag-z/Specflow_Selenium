@@ -1,0 +1,34 @@
+2024-12-27 11:34:06 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Login to Application
+2024-12-27 11:34:06 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Login to Application Fail
+2024-12-27 11:34:07 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Navigated to: https://www.saucedemo.com/
+2024-12-27 11:34:07 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Navigated to: https://www.saucedemo.com/
+2024-12-27 11:34:07 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Typed 'standard_user' into element: By.XPath: //input[@id="user-name"]
+2024-12-27 11:34:07 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Typed 'standard_user' into element: By.XPath: //input[@id="user-name"]
+2024-12-27 11:34:08 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Typed 'secret_sauce' into element: By.XPath: //input[@id="password"]
+2024-12-27 11:34:08 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Typed 'secret_sauce' into element: By.XPath: //input[@id="password"]
+2024-12-27 11:34:08 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Clicked on element: By.XPath: //input[@id="login-button"]
+2024-12-27 11:34:08 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Clicked on element: By.XPath: //input[@id="login-button"]
+2024-12-27 11:34:08 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Text retrieved from element: By.XPath: //span[@data-test="title"]: Products
+2024-12-27 11:34:08 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Text retrieved from element: By.XPath: //span[@data-test="title"]: Products
+2024-12-27 11:34:25 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Login to Application Fail
+2024-12-27 11:34:25 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Login to Application P
+2024-12-27 11:34:25 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Navigated to: https://www.saucedemo.com/
+2024-12-27 11:34:25 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Navigated to: https://www.saucedemo.com/
+2024-12-27 11:34:26 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Typed 'standard_user' into element: By.XPath: //input[@id="user-name"]
+2024-12-27 11:34:26 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Typed 'standard_user' into element: By.XPath: //input[@id="user-name"]
+2024-12-27 11:34:26 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Typed 'secret_sauce' into element: By.XPath: //input[@id="password"]
+2024-12-27 11:34:26 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Typed 'secret_sauce' into element: By.XPath: //input[@id="password"]
+2024-12-27 11:34:26 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Clicked on element: By.XPath: //input[@id="login-button"]
+2024-12-27 11:34:26 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Clicked on element: By.XPath: //input[@id="login-button"]
+2024-12-27 11:34:26 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Text retrieved from element: By.XPath: //span[@data-test="title"]: Products
+2024-12-27 11:34:26 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Text retrieved from element: By.XPath: //span[@data-test="title"]: Products
+2024-12-27 11:34:28 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Verify Side Menu After Login Page
+2024-12-27 11:34:29 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Verify Side Menu After Login Page
+2024-12-27 11:34:29 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Navigated to: https://www.saucedemo.com/
+2024-12-27 11:34:29 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Navigated to: https://www.saucedemo.com/
+2024-12-27 11:34:29 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Typed 'standard_user' into element: By.XPath: //input[@id="user-name"]
+2024-12-27 11:34:29 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Typed 'secret_sauce' into element: By.XPath: //input[@id="password"]
+2024-12-27 11:34:29 [ParallelWorker#2] INFO  PlaySel.Logs.Log4netLogger - Clicked on element: By.XPath: //input[@id="login-button"]
+2024-12-27 11:34:29 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Typed 'standard_user' into element: By.XPath: //input[@id="user-name"]
+2024-12-27 11:34:30 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Typed 'secret_sauce' into element: By.XPath: //input[@id="password"]
+2024-12-27 11:34:30 [ParallelWorker#1] INFO  PlaySel.Logs.Log4netLogger - Clicked on element: By.XPath: //input[@id="login-button"]
