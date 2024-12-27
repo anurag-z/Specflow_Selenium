@@ -65,8 +65,8 @@ namespace PlaySel.Hooks
                 // string filePath = Directory.GetCurrentDirectory().Replace("bin\\Debug\\net6.0", "Extent_Reports\\");
                
                 Console.Write(reportDirectory + time);
-                screenshot.SaveAsFile(reportDirectory + _scenarioContext.ScenarioInfo.Title+ time + ".Png");
-                _extentManager.Attachscreenshot(reportDirectory + _scenarioContext.ScenarioInfo.Title + time + ".Png", "Screenshot");
+                screenshot.SaveAsFile(reportDirectory + Path.DirectorySeparatorChar + _scenarioContext.ScenarioInfo.Title+ time + ".Png");
+                _extentManager.Attachscreenshot(reportDirectory + Path.DirectorySeparatorChar + _scenarioContext.ScenarioInfo.Title + time + ".Png", "Screenshot");
             }
             _extentManager.Flush();
         }

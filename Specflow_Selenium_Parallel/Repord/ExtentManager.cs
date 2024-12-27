@@ -39,7 +39,7 @@ namespace PlaySel.Repord
        }
 
        // Generate a unique report file path.
-       var reportPath = Path.Combine(reportDirectory, $"TestReport_{Guid.NewGuid()}.html");
+       var reportPath =reportDirectory+ Path.DirectorySeparatorChar + $"TestReport_{Guid.NewGuid()}.html";
 
 
          Console.Write(reportPath);
