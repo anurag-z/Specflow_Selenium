@@ -27,7 +27,7 @@ jobs:
         with:
           working-directory: ./Specflow_Selenium_Parallel
       - name: Run SpecFlow Tests
-      - run: |
+        run: |
           dotnet test --no-build --verbosity normal
           continue-on-error: true
       - name: Upload a Build Artifact
