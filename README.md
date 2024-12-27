@@ -2,16 +2,18 @@
 
 ## Overview
 
-This repository contains a **SpecFlow** Selenium framework that uses the **Page Object Model (POM)** pattern for testing web applications. The framework is designed to be used with the following technologies:
+This repository contains a **SpecFlow** Selenium framework that uses **Dependency Injection** and **Page Object Model (POM)** pattern for testing web applications and also support **Parallel Execution** . The framework is designed to be used with the following technologies:
 
 - **SpecFlow** (BDD for C#)
 - **Selenium WebDriver** (for browser automation)
-- **NUnit 2.x** (for test execution)
-- **SpecFlow Report Templates** (for reporting)
-- **Pickles** (for generating documentation from SpecFlow features)
+- **NUnit 4.x** (for test execution)
+- **Extent Report** (for reporting)
+- **SpecFlow.DependencyInjection** (for generating documentation from SpecFlow features)
+- **log4net** (for maintaining logs)
+- **Newtonsoft.Json** (for working with Json file)
 - **Takes screenshots on test failure**
 
-The framework supports automation for **multiple browsers** and is easily extendable for various web application testing needs.
+The framework supports automation for **Parallel Execution** and is easily extendable for various web application testing needs.
 
 ---
 
@@ -20,9 +22,9 @@ The framework supports automation for **multiple browsers** and is easily extend
 - **BDD with SpecFlow**: Write tests using natural language (Gherkin syntax) and automate them using Selenium WebDriver.
 - **Page Object Model**: Helps organize test code and maintain scalability by separating UI elements and actions into reusable classes.
 - **Cross-browser Testing**: Support for Chrome, Internet Explorer (IE), and Edge browsers.
-- **Enhanced Reporting**: Using SpecFlow's reporting templates and **SpecRun** for detailed test execution logs.
+- **Enhanced Reporting**: Using Extent Report for maintaing the Testcase Step and log into an HTML.
 - **Screenshots on Failure**: Automatically takes screenshots on test failure for better debugging.
-- **Documentation Generation**: Generate documentation for features and scenarios using **Pickles**.
+- **Log Generation**: Generate Log even in Parallel execution , it uses shared log startegy for maintain logs
 
 ---
 
@@ -61,11 +63,7 @@ The framework supports automation for **multiple browsers** and is easily extend
      - **Copy to Output Directory** is set to **Copy Always**.
    - This ensures that the `chromedriver.exe` is placed in the output directory for proper execution.
 
-4. **Configure App.config**:
-   - An `App.config` file is generated as part of NuGet installations. If you're using MSTest instead of NUnit as your test runner, you'll need to update this file accordingly.
-   - Keep the configuration set for **NUnit** or **SpecRun** (if installed).
-
-5. **Install SpecFlow Extension in Visual Studio**:
+4. **Install SpecFlow Extension in Visual Studio**:
    - Go to `Tools > Extensions and Updates > Online`.
    - Search for **SpecFlow** and install the extension. Restart Visual Studio after installation.
 
@@ -91,9 +89,5 @@ The framework supports automation for **multiple browsers** and is easily extend
 2. **Configure SpecRun**:
    - Change the `stopAfterFailures` attribute to `0` in the configuration file. This setting tells SpecRun not to stop after any failures and to continue running all tests.
 
----
 
-## Folder Structure
-
-Here’s an overview of the typical project structure:
 
