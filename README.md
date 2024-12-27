@@ -1,11 +1,8 @@
-# SpecFlow Selenium Framework
+# SpecFlow Parallel Test Execution with Selenium
 
 ## Overview
 
-This repository contains a **SpecFlow** Selenium framework that uses **Dependency Injection** and **Page Object Model (POM)** pattern for testing web applications and also support **Parallel Execution** . 
-# SpecFlow Parallel Test Execution with Selenium
-
-This repository demonstrates how to execute SpecFlow scenarios in parallel using NUnit 3.x. 
+This repository contains a **SpecFlow** Selenium framework that uses **Dependency Injection** and **Page Object Model (POM)** pattern for testing web applications and also support **Parallel Execution**  using NUnit 4.x. 
 
 ## 1. SpecFlow Parallel Test Execution
 
