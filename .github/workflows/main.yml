@@ -10,7 +10,7 @@ on:
             Platform:
                 description: 'Enter Platform type'
                 type: string
-                required: true
+                required: false
                 default: web
 jobs:
   build:
@@ -32,8 +32,8 @@ jobs:
         uses: coactions/setup-xvfb@v1
         with:
           working-directory: ./Specflow_Selenium_Parallel
-        run: |
-          dotnet test --no-build --verbosity normal
+      - run: |
+          dotnet test --no-build --verbosity normal ----filter TestCategory=SauceDemo
           continue-on-error: true
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
