@@ -55,15 +55,7 @@ The framework supports automation for **Parallel Execution** and is easily exten
      - Install Selenium via [NuGet Must Haves](http://nugetmusthaves.com/Tag/selenium)
    - **Selenium Support Package**
 
-3. **Download WebDriver Drivers**:
-   - Create a folder named `dependencies` in the project.
-   - Download the appropriate drivers (Chrome, IE, Edge) via **NuGet** packages.
-   - Right-click on `chromedriver.exe`, select **Properties**, and ensure:
-     - **Build Action** is set to **Content**.
-     - **Copy to Output Directory** is set to **Copy Always**.
-   - This ensures that the `chromedriver.exe` is placed in the output directory for proper execution.
-
-4. **Install SpecFlow Extension in Visual Studio**:
+3. **Install SpecFlow Extension in Visual Studio**:
    - Go to `Tools > Extensions and Updates > Online`.
    - Search for **SpecFlow** and install the extension. Restart Visual Studio after installation.
 
