@@ -32,7 +32,7 @@ namespace PlaySel.Repord
 
       
        // Generate a unique report file path.
-       var reportPath = Directory.GetCurrentDirectory() + "//Extent_Reports//" + $"TestReport_{Guid.NewGuid()}.html";
+       var reportPath = Directory.GetCurrentDirectory() + @"\Extent_Reports\" + $"TestReport_{Guid.NewGuid()}.html";
 
 
          Console.Write(reportPath);

@@ -53,16 +53,15 @@ namespace PlaySel.Hooks
                 ITakesScreenshot screenshotDriver =  _browserDriver._driver as ITakesScreenshot;
                 Screenshot screenshot = screenshotDriver.GetScreenshot();
 
-                string reportDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Extent_Reports");
-
+               
         
                 string time = Guid.NewGuid().ToString();
 
                 // string filePath = Directory.GetCurrentDirectory().Replace("bin\\Debug\\net6.0", "Extent_Reports\\");
                
-                Console.Write(reportDirectory + time);
-                screenshot.SaveAsFile(Directory.GetCurrentDirectory() +"//Extent_Reports//"+ _scenarioContext.ScenarioInfo.Title+ time + ".Png");
-                _extentManager.Attachscreenshot(Directory.GetCurrentDirectory() + "//Extent_Reports//" + _scenarioContext.ScenarioInfo.Title + time + ".Png", "Screenshot");
+               
+                screenshot.SaveAsFile(Directory.GetCurrentDirectory() +@"\Extent_Reports\"+ _scenarioContext.ScenarioInfo.Title+ time + ".Png");
+                _extentManager.Attachscreenshot(Directory.GetCurrentDirectory() + @"\Extent_Reports\" + _scenarioContext.ScenarioInfo.Title + time + ".Png", "Screenshot");
             }
             _extentManager.Flush();
         }
