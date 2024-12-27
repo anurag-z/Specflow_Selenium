@@ -68,13 +68,5 @@ The framework supports automation for **Parallel Execution** and is easily exten
    - Search for **SpecFlow** and install the extension. Restart Visual Studio after installation.
 
 
-## Setting Up Enhanced Reporting
-
-1. **Install SpecRun**: SpecRun is used for enhanced test reporting and IDE intellisense.
-   - Install via NuGet.
-   
-2. **Configure SpecRun**:
-   - Change the `stopAfterFailures` attribute to `0` in the configuration file. This setting tells SpecRun not to stop after any failures and to continue running all tests.
-
 
 
