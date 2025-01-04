@@ -10,5 +10,16 @@ namespace PlaySel.Modal
     {
         public String Url { get; set; }
         public String Browser {  get; set; }
+        public String Base_url { get; set; }
+        public Endpoint Endpoint { get; set; }
+    }
+
+    public class Endpoint
+    { 
+        public String Booking { get; set; }
+    }
+
+    public class root {
+        public int bookingid { get; set; }
     }
 }

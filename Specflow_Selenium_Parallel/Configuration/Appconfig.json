@@ -1,6 +1,11 @@
 ﻿{
 
   "URL": "https://www.saucedemo.com/",
-  "Browser": "Chrome"
+  "Browser": "Chrome",
+  "Base_url": "https://restful-booker.herokuapp.com",
+  "Endpoint": {
+
+    "Booking": "/booking"
+  }
 
 }

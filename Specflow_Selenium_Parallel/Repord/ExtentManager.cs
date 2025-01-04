@@ -14,6 +14,7 @@ namespace PlaySel.Repord
         void LogTestResult(string status, string message);
         void Flush();
         void Attachscreenshot(string filepath, string description);
+        public void AssignGroup(string groupName);
 
 
 
@@ -62,6 +63,12 @@ namespace PlaySel.Repord
         {
             _extentReports.Value.Flush();
         }
-      
+        // Method to assign a group/category to a test
+        public void AssignGroup(string groupName)
+        {
+            if (_extentTests.Value == null) throw new InvalidOperationException("Test is not initialized.");
+            _extentTests.Value.AssignCategory(groupName);  // Assign the test to a group/category
+        }
+
     }
 }

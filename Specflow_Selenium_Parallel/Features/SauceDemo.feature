@@ -9,14 +9,14 @@ When I Login Application
 	| Username      | Password     |
 	| standard_user | secret_sauce |
 
-@SauceDemo@owner:Anurag@UI
+@SauceDemo@owner:Anurag@UI 
 Scenario: Login to Application
 
 	Then I verify Landing Page Success login "Products"
 
 
 	
-@SauceDemo@owner:Anurag@UI
+@SauceDemo@owner:Anuragd@UI
 Scenario: Login to Application Fail
 
 	Then I verify Landing Page Success login "Product"

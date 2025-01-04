@@ -31,12 +31,18 @@ namespace PlaySel.Hooks
         }
        
         [BeforeScenario]
+        [Scope(Tag = "UI")]
         public  void BeforeScenario(ScenarioContext scenarioContext, IBrowserDriver browserDriver)
         {
             _browserDriver = browserDriver;
             _scenarioContext = scenarioContext;
-          
+            var extractedOwners = _scenarioContext.ScenarioInfo.Tags
+             .Where(tag => tag.Contains("owner:"))        // Filter tags that contain 'owner_'
+             .Select(tag => tag.Split(':')[1])              // Split by '_' and get the second part (index 1)
+             .ToList().FirstOrDefault();
+  
             _extentManager.CreateTest(_scenarioContext.ScenarioInfo.Title);
+            _extentManager.AssignGroup(extractedOwners!);
             _extentManager.LogTestResult("Info", "Scenario"+ _scenarioContext.ScenarioInfo.Title + "started.");
            
             _scenarioContext.Set(_appconfig);
@@ -44,6 +50,25 @@ namespace PlaySel.Hooks
             _appLogger.LogInfo(_scenarioContext.ScenarioInfo.Title);
 
 
+        }
+        [BeforeScenario,Scope(Tag ="API")]
+        public void BeforeScenario(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+            var extractedOwners = _scenarioContext.ScenarioInfo.Tags
+             .Where(tag => tag.Contains("owner:"))        // Filter tags that contain 'owner_'
+             .Select(tag => tag.Split(':')[1])              // Split by '_' and get the second part (index 1)
+             .ToList().FirstOrDefault();
+           
+            _extentManager.CreateTest(_scenarioContext.ScenarioInfo.Title);
+            _extentManager.AssignGroup(extractedOwners!);
+            _extentManager.AssignGroup("API");
+            _extentManager.LogTestResult("Info", "Scenario" + _scenarioContext.ScenarioInfo.Title + "started.");
+
+            _scenarioContext.Set(_appconfig);
+            _extentManager.LogTestResult("Info", _appconfig.Base_url);
+            Console.WriteLine(_appconfig.Base_url);
+            _appLogger.LogInfo(_scenarioContext.ScenarioInfo.Title);
         }
         [AfterScenario]
         public  void AfterScenario()

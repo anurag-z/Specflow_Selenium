@@ -4,7 +4,9 @@ using PlaySel.Drivers;
 using PlaySel.Helpers;
 using PlaySel.Logs;
 using PlaySel.Repord;
+using RestSharp;
 using SolidToken.SpecFlow.DependencyInjection;
+using Specflow_Selenium_Parallel.API_Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -25,6 +27,7 @@ namespace PlaySel
             service.AddSingleton(Config.loadconfig());
             service.AddScoped<IAppLogger, Log4netLogger>();
             service.AddScoped<IActionWarpper, ActionWarpper>();
+            service.AddScoped<IRest_Client, Rest_Client>();
             return service;
         }
     }
